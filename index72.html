@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>72</title>
+  <title>Пример скрипта</title>
   <script type="text/javascript">
-  function up() {
-    document.mypic.scr = "images/on.png";
-  }
-  function down() {
-      document.mypic.scr = "images/off.png";
+    function up() {
+      document.mypic.src = 'images/on.jpg';
     }
-  function up2() {
-      document.mypic2.scr = "images/on.png";
+    function down() {
+      document.mypic.src = 'images/off.jpg';
     }
-  function down2() {
-      document.mypic2.scr = "images/off.png";
+    function up2() {
+      document.mypic2.src = 'images/off.jpg'
+    }
+    function down2() {
+      document.mypic2.src = 'images/on.jpg';
     }
   </script>
 </head>
+
 <body>
-  <a href="https://itiu.bsu.by" onmouseover="up()" onmouseout="down()">
-  <img src="images/off.png" name="mypic" border=0></a>
-  <a href="https://onliner.by/" onmouseover="up2()" onmouseout="down2()">
-  <img src="images/off.png" name="mypic2" border=0></a>
+  <a href="https://itiu.bsu.by" onMouseOver="up()" onMouseOut="down()">
+    <img src="images/off.jpg" name="mypic"  border=0></a>
+  <a href="https://onliner.by/" onMouseOver="up2()" onMouseOut="down2()">
+    <img src="images/on.jpg" name="mypic2" border=0></a>
 </body>
+
 </html>
