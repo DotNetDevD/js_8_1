@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Пример скрипта</title>
+  <title>72</title>
   <script type="text/javascript">
     function up() {
       document.mypic.src = 'images/on.jpg';
@@ -14,17 +13,17 @@
       document.mypic.src = 'images/off.jpg';
     }
     function up2() {
-      document.mypic2.src = 'images/off.jpg'
+      document.mypic2.src = 'images/on.jpg'
     }
     function down2() {
-      document.mypic2.src = 'images/on.jpg';
+      document.mypic2.src = 'images/off.jpg';
     }
   </script>
 </head>
 
 <body>
   <a href="https://itiu.bsu.by" onMouseOver="up()" onMouseOut="down()">
-    <img src="images/off.jpg" name="mypic"  border=0></a>
+    <img src="images/off.jpg" name="mypic" border=0></a>
   <a href="https://onliner.by/" onMouseOver="up2()" onMouseOut="down2()">
     <img src="images/on.jpg" name="mypic2" border=0></a>
 </body>
